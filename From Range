@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package loopsPackage;
+import java.util.Scanner;
+/**
+ * @author jiccasa
+ *
+ */
+public class FromRange {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Please input a minimum: ");
+		int min = scan.nextInt();
+		System.out.print("Please input a maximum: ");
+		int max = scan.nextInt();
+		for (int i=min;i<=max;i++) {
+			System.out.println(i);
+		}
+	}
+
+}
