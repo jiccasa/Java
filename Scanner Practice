@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package MyPackage;
+import java.util.Scanner;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Scannerpractice {
+
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Asking Questions
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is you name?");
+		String name = scan.nextLine();
+		System.out.println("What is your age?");
+		byte age = scan.nextByte();
+		System.out.println("What is your gender?");
+		String gender = scan.next();
+		System.out.println("What is your GPA?");
+		float gpa = scan.nextFloat();
+		System.out.println("What is your bank balance?");
+		long bankBalance = scan.nextLong();
+		// Printing Answer
+		System.out.println(name);
+		System.out.println("Gender: " + gender);
+		System.out.println("Age: " + age);
+		System.out.println("GPA: " + gpa);
+		System.out.println("Bank Balance: " + bankBalance);
+		
+				
+
+	}
+
+}
