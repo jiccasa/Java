@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package JsPackage;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Forloop {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Count from 0 to 100");
+		for (int i=0; i<101; i++) {
+			System.out.println(i);
+		}
+
+	}
+
+}
