@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package JsPackage;
+import java.util.Scanner;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class DecimalToBinary {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScan = new Scanner(System.in);
+		int decNum, quotient, i=0, remainder, j;
+		int binaryNum[] = new int[100];
+		System.out.print("Enter integer number: ");
+		decNum = myScan.nextInt();
+		
+		quotient = decNum;
+		while (quotient != 0) {
+			remainder = quotient%2;
+			quotient = quotient/2;
+			//System.out.println(quotient + " " + remainder);
+			binaryNum [i++] = remainder;
+		}
+		
+		System.out.print("Decimal :" + decNum + "Binary: " );
+		
+		for(j=i-1; j>=0; j--) {
+			System.out.print(binaryNum[j]);
+		}
+		
+
+		System.out.print("\nCross verify: "+ Integer.toBinaryString(decNum) );
+	}
+
+}
