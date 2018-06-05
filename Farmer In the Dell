@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package ArrayPackage;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class FarmerInTheDell {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] things = {"farmer","wife","child","nurse","cow", "dog","cat","mouse","cheese"};
+		System.out.println("The " + things[0]+ " in the dell.");
+		System.out.println("Hi-ho, the derry-yo.");
+		System.out.println("The " + things[0]+ " in the dell.");
+		for (int i=1;i<8;i++) {
+			System.out.println("The " + things[i-1]+ " takes a " + things[i] +".");
+			System.out.println("Hi-ho, the derry-yo.");
+			System.out.println("The " + things[i-1]+ " takes a " + things[i] +".");
+		System.out.println("The " + things[8]+ " stands alone.");
+		System.out.println("Hi-ho, the derry-yo.");
+		System.out.println("The " + things[8]+ " stands alone.");
+		}
+	}	
+
+}
