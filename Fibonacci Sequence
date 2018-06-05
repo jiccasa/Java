@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+package JsPackage;
+import java.util.Scanner;
+/**
+ * @author jiccasa
+ *
+ */
+public class FibonacciSequence {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScan = new Scanner(System.in);
+		System.out.print("Please input a limit for the Fibonacci Squence: ");
+		int limit = myScan.nextInt();
+		int firstNumber = 0;
+		int secondNumber = 1;
+		int thirdNumber=0;
+		System.out.println(firstNumber) ;
+		System.out.println(secondNumber);
+		while (thirdNumber<limit) {
+			thirdNumber= firstNumber + secondNumber;
+			System.out.println(thirdNumber);
+			firstNumber = secondNumber;
+			secondNumber = thirdNumber;
+	
+			
+			
+		}
+		
+		
+
+	}
+
+}
