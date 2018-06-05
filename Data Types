@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package MyPackage;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Datatypes {
+	
+	
+	
+	
+	
+	
+	
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String firstname = "Jessica";
+		char middlename = 'M';
+		String lastname = "Santhanam";
+		byte age = 14;
+		float gpa = 4.14f;
+		long bankBalance = 1000000000000000000L;
+		String gender = "Female";
+		System.out.println(firstname +" " + middlename + " " + lastname);
+		System.out.println("Gender: " + gender);
+		System.out.println("Age: " + age);
+		System.out.println("GPA: " + gpa);
+		System.out.println("Bank Balance: " + bankBalance);
+	}
+
+}
