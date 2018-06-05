@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package ArrayPackage;
+
+import java.util.Scanner;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class MaxArray {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int[] numbers = {1, 24,43,27, 5, 56, 9};
+		int highest = numbers[0];
+	    for (int index = 1; index < numbers.length; index ++) {
+	        if (numbers[index] > highest) {
+	            highest = numbers [index];
+	        }	
+	    }
+	    System.out.println("Highest Number: " + highest);  
+	}
+		// TODO Auto-generated method stub
+
+	}
+
+
