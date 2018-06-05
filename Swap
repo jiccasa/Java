@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package JsPackage;
+import java.util.Scanner;
+/**
+ * @author jiccasa
+ *
+ */
+public class Swap {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScan = new Scanner(System.in);
+		System.out.println("Please input a number: ");
+		int fnum = myScan.nextInt();
+		System.out.println("Please input a second number: ");
+		int snum = myScan.nextInt();
+		int tnum = 0;
+		tnum = fnum;
+		fnum = snum;
+		snum = tnum;
+		System.out.println("First number: " + fnum);
+		System.out.println("Second number: " + snum);
+
+	}
+
+}
