@@ -1,0 +1,55 @@
+/**
+ * 
+ */
+package JsPackage;
+import java.util.Scanner;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class AddingDigits {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Input a given number
+		Scanner myScan = new Scanner(System.in);
+		System.out.print("Please input a number: ");
+		int num = myScan.nextInt();
+		int remainingNum = num;
+		int sumOfDigits = 0;
+		
+		// Loop through until the num becomes 0
+		
+		while(remainingNum != 0) {
+			// extract the last digit
+			//add it to the sumOfDigits
+			//Modify the remainingNum again
+			int Digit = remainingNum%10;
+			sumOfDigits += Digit;
+			remainingNum /= 10;
+			
+			
+		}
+		
+		
+		int firstDigit = num%10;
+		remainingNum = num/10;
+		int secondDigit = remainingNum%10;
+	    remainingNum = remainingNum/10;
+		int thirdDigit = remainingNum%10;
+		
+		
+		System.out.println("The sum of the digits is: " + sumOfDigits);
+		
+				
+		
+				
+
+	}
+
+}
