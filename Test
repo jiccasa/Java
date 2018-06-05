@@ -1,0 +1,19 @@
+package MyPackage;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int y=25,z=4;
+	
+if(!(z > Math.sqrt(y)))
+	System.out.println(hasPennies(54));;
+	}
+	
+	
+	public static boolean hasPennies(int cents) {
+	       boolean nickelsOnly = false;
+	       return ( nickelsOnly== (cents % 5 == 0));
+	    //return (cents % 5 == 0);
+	}
+}
