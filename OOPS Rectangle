@@ -1,0 +1,130 @@
+/**
+ * 
+ */
+package oops;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Rectangle {
+
+	/**
+	 * instance variables
+	 */
+	private double length;
+	private double width;
+	
+	/**
+	 * constructors
+	 */
+	public Rectangle() {
+		this.length = 1;
+		this.width = 1;
+	}
+	
+	public Rectangle(double l, double w) {
+		this.length = l;
+		this.width = w;
+	}
+	/**
+	 * Methods (getters and setters)
+	 */
+	public void setLength(double l) {
+		this.length = l;
+	}
+	
+	public void setWidth(double w) {
+		this.width = w;
+	}
+	
+	public double getLength() {
+		return length;
+	}
+	
+	public double getWidth() {
+		return width;
+	}
+	
+	/**
+	 * Other Public Methods
+	 */
+	public double getArea() {
+		return length*width;
+	}
+	
+	public double getPerimeter() {
+		return 2*(length+width);
+	}
+	
+	public String toString() {
+		return"Length: " + getLength() + ", Width: " + getWidth() + ", Area: " + getArea() + ", Perimeter: " + getPerimeter();
+	}
+
+
+}
+/**
+ * 
+ */
+package oops;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Rectangle {
+
+	/**
+	 * instance variables
+	 */
+	private double length;
+	private double width;
+	
+	/**
+	 * constructors
+	 */
+	public Rectangle() {
+		this.length = 1;
+		this.width = 1;
+	}
+	
+	public Rectangle(double l, double w) {
+		this.length = l;
+		this.width = w;
+	}
+	/**
+	 * Methods (getters and setters)
+	 */
+	public void setLength(double l) {
+		this.length = l;
+	}
+	
+	public void setWidth(double w) {
+		this.width = w;
+	}
+	
+	public double getLength() {
+		return length;
+	}
+	
+	public double getWidth() {
+		return width;
+	}
+	
+	/**
+	 * Other Public Methods
+	 */
+	public double getArea() {
+		return length*width;
+	}
+	
+	public double getPerimeter() {
+		return 2*(length+width);
+	}
+	
+	public String toString() {
+		return"Length: " + getLength() + ", Width: " + getWidth() + ", Area: " + getArea() + ", Perimeter: " + getPerimeter();
+	}
+
+
+}
