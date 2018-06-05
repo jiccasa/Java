@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package MyPackage;
+import java.util.Scanner;
+/**
+ * @author jiccasa
+ *
+ */
+public class BIggerNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScan = new Scanner(System.in);
+		System.out.print("Please input the first number: ");
+		int firstNum = myScan.nextInt();
+		System.out.print("Please input the second number: ");
+		int secondNum = myScan.nextInt();
+		System.out.print("Please input the third number: ");
+		int thirdNum = myScan.nextInt();
+		int biggest = firstNum;
+		if(secondNum > biggest) 
+			biggest = secondNum;
+		
+		if(thirdNum>biggest)
+			biggest = thirdNum;
+		
+	
+		System.out.print(biggest);
+		
+	}
+}
+	
+
+
