@@ -1,0 +1,46 @@
+package JsPackage;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float a,b,c;
+		//Addition
+		a=10;
+		b=20;
+		c=a+b;
+		System.out.println("Value of A = "+ a);
+		System.out.println("Value of B = "+ b);
+		System.out.println("Value of C (A+B)  = "+ c);
+		// Subtraction
+		a=35;
+		b=20;
+		c=a-b;
+		System.out.println("Value of A = "+ a);
+		System.out.println("Value of B = "+ b);
+		System.out.println("Value of C (A-B)  = "+ c);
+		// Multiplication
+		a=10;
+		b=20;
+		c=a*b;
+		System.out.println("Value of A = "+ a);
+		System.out.println("Value of B = "+ b);
+		System.out.println("Value of C (A*B)  = "+ c);
+		// Division
+		a=10;
+		b=20;
+		c=a/b;
+		System.out.println("Value of A = "+ a);
+		System.out.println("Value of B = "+ b);
+		System.out.println("Value of C (A/B)  = "+ c);
+		// Remainder
+		a=10;
+		b=3;
+		c=a%b;
+		System.out.println("Value of A = "+ a);
+		System.out.println("Value of B = "+ b);
+		System.out.println("Value of C (A%B)  = "+ c);
+
+	}
+
+}
