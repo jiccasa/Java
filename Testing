@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package MyPackage;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Testing {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int ig = 1; ig <= 8; ig++) { 
+			for(int jg = 5; jg > 0; jg--) {   
+				System.out.print("*");   
+				System.out.print("*"); 
+				} 
+			}
+	}
+
+}
