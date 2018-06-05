@@ -1,0 +1,51 @@
+/**
+ * 
+ */
+package StringsPackage;
+
+import java.util.Scanner;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Vowels {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("What should the phrase be?");
+		String phrase = myScanner.next();
+		//String phrase =  "Hello World";
+		int i=0, length, Vowels = 0;
+		String j;
+		length = phrase.length();
+		for (i = 0; i < length; i++){
+			j = phrase.substring(i, i+1);
+			//System.out.println(j);
+			if (j.equalsIgnoreCase("a") )
+				Vowels++;	
+			else if (j.equalsIgnoreCase("e") )
+				Vowels++;
+			else if (j.equalsIgnoreCase("i") )
+				Vowels++;
+			else if (j.equalsIgnoreCase("o") )
+				Vowels++;
+			else if (j.equalsIgnoreCase("u") )
+				Vowels++;
+
+
+		}
+		System.out.println("Number of vowels: " + Vowels);
+
+
+	}
+
+
+
+
+}
+
