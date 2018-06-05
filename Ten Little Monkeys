@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package loopsPackage;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class TenLittleMonkeys {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		for (int i=10;i>=0;i--) {
+			if (i==1) {
+				System.out.println(i +" little monkey jumping on the bed.");
+			}
+			else if (i==0) {
+				System.out.println("No little monkeys jumping on the bed.");
+			} else {
+			System.out.println(i + " little monkeys jumping on the bed." );
+		}
+
+	}
+	}
+}
