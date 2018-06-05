@@ -1,0 +1,84 @@
+/**
+ * 
+ */
+package MethodsPackage;
+import java.util.Scanner;
+import java.util.ArrayList;
+/**
+ * @author jiccasa
+ *
+ */
+public class VendingMachine {
+
+	/**
+	 * @param args
+	 */
+	//public static void menu() {
+		
+	
+	//public static void buying(String [] foods) {
+		
+		
+
+	
+	@SuppressWarnings("resource")
+	public static void main(String[] foods ) {
+		// TODO Auto-generated method stub
+		Scanner myScan = new Scanner(System.in);
+		System.out.println("DISCLAIMER: PLEASE USE EXACT CHANGE");
+		 ArrayList<String> snacks = new ArrayList<String>();
+		 snacks.add("Coke - 0");
+		 snacks.add("Sprite - 1");
+		 snacks.add("Cheetos - 2");
+		 snacks.add("Doritos - 3");
+		 snacks.add("Gatorade - 4");
+		 System.out.println(snacks);
+		 ArrayList<Double> price = new ArrayList<Double>();
+		 price.add(1.50);
+		 price.add(2.00);
+		 price.add(1.50);
+		 price.add(1.50);
+		 price.add(2.50);
+			System.out.println("What would you like to buy?");
+			double pay=0.0;
+			int product = myScan.nextInt();
+			pay = price.get(product);
+		double initialMoney = 0.0;
+		double pay1 = pay;//to display how much more to pay
+		while (pay>initialMoney ) {
+			System.out.printf("\nPlease insert $%.2f" , pay1);
+			double coins = myScan.nextDouble();
+			if ((coins != 0.50) && (coins != 0.25) && (coins != 0.10) && (coins != 0.05) && (coins != 1.00) && (coins != 0.01)){
+				System.out.println("Sorry but we do not accept this payment method.");
+				System.out.println("Please try again.");
+			}
+			else {
+				initialMoney = initialMoney + coins;
+				pay1 = pay1 - coins;
+				//System.out.printf("\nPlease insert $%.2f" , pay1);
+			}
+			
+				
+		}
+		System.out.println("Thank you!");
+			double change = 0 - pay1;
+			System.out.printf("\nYour change is: $%.2f", change);
+		int halfDollars = (int)(change/0.5);
+		change = change- (halfDollars*0.5);
+		int quarters = (int)((change%50)/0.25);
+		change = change- (quarters*0.25);
+		int dimes = (int)((change%50)/0.10);
+		change = change - (dimes*0.10);
+		int pennies = (int)((change%50)/0.01);
+		System.out.println("Please take you change.");
+		System.out.println(halfDollars+" halfdollars");
+		System.out.println(quarters+" quarters");
+		System.out.println(dimes+" dimes");
+		System.out.println(pennies+" pennies");
+	}
+	
+}		
+
+
+
+
