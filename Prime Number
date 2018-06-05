@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package JsPackage;
+import java.util.Scanner;
+/**
+ * @author jiccasa
+ *
+ */
+public class PrimeNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScan = new Scanner(System.in);
+		System.out.println("Please input a number: ");
+		int num = myScan.nextInt();
+		if (isEven(num)) {
+			System.out.println(num + " is even.");
+		}
+		else {
+			System.out.println(num + " is odd.");
+		}
+		
+		if (isPrime(num)) {
+			System.out.println(num + " is prime.");
+		}
+		else {
+			System.out.println(num + " is not prime.");
+		}
+		
+		System.out.println("Please a max limit: ");
+		int limit = myScan.nextInt();
+		for (int i=1;i<limit;i++) {
+			if (isPrime(i)) {
+				System.out.println(i);
+			}
+		}
+		
+	}
+	
+	public static boolean isEven(int n) {
+		if (n%2 == 0) {
+			return true;	
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public static boolean isPrime(int n) {
+		for (int i=2;2*i<n;i++) {
+			if (n%i == 0) {
+				return false;
+			}
+		}
+		return true;
+
+	}
+
+}
