@@ -1,0 +1,61 @@
+/**
+ * 
+ */
+package ArrayPackage;
+
+import java.util.Scanner;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class FlashCards {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] questions = {"What does 2 plus 2 equal?","What does 5 minus 4 equal?", "What does 4 plus 3 equal?", "What does 10 divided by 2 equal?","What does 5 multipied by 3 equal?"};	
+		String[] anwsers = {"4","1","7","2","15"};
+		int index = (int)(Math.random()*5);
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println(questions[index]);
+		System.out.print("Anwser choices: ");
+		for (int i=0;i<anwsers.length;i++) {
+			System.out.print(anwsers[i]+"; ");
+		}
+		String reply = myScanner.next();
+        int counter = 0;
+		if (reply.equals(anwsers[index])) {
+			System.out.println("Correct!Good Job!");
+			counter= counter + 1;
+		}
+		else {
+            while (!(reply.equals(anwsers[index]))) {
+            		System.out.println("Wrong.Try again.");
+            		System.out.print(questions[index]);
+            		System.out.print("Anwser choices: ");
+            		for (int i=0;i<anwsers.length;i++) {
+            			System.out.print(anwsers[i]+"; ");
+            		}
+            		String reply1 = myScanner.next();
+            		reply = reply1;	
+        
+		}
+            System.out.println("Correct!GoodJob!");
+            counter = counter + 1;
+            System.out.println("Would you like to anwser another question?");
+            String ynreply = myScanner.next();
+            if (ynreply=="yes") {
+            		
+            }
+            
+            
+			
+	}	
+		
+
+}
+
+}
