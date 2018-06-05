@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package JsPackage;
+import java.util.Scanner;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class Circle {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner myScan = new Scanner(System.in);
+		System.out.println("What do you want the radius of the circle to be?");
+		double radius1 = myScan.nextInt();
+		double circumfrence1 = (2*Math.PI*radius1);
+		double area1 = (Math.PI*radius1*radius1);
+		System.out.println("The area of the first circle is: "+ area1);
+		System.out.println("The circumfrence of the first circle is: "+ circumfrence1);
+		
+		System.out.println("What do you want the radius of the circle to be?");
+		double radius2 = myScan.nextInt();
+		double circumfrence2 = (2*Math.PI*radius2);
+		double area2 = (Math.PI*radius2*radius2);
+		System.out.println("The area of the second circle is: "+ area2);
+		System.out.println("The circumfrence of the second circle is: "+ circumfrence2);
+		
+
+	}
+
+}
