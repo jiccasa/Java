@@ -1,0 +1,23 @@
+package JsPackage;
+
+public class Oddeven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int fromNum = 0;
+		int toNum = 100;
+		for (int i=fromNum; i<toNum+1; i++) {
+			String result;
+			if (i%2 == 0) {
+				result = "even";
+			}
+			else {
+				result = "odd";	
+			}
+			System.out.println(i + " is " + result);
+			
+		}
+
+	}
+
+}
