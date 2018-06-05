@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package ArrayPackage;
+
+/**
+ * @author jiccasa
+ *
+ */
+public class OldMcDonaldsSong {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] animals = {"cow","pig","duck","horse","lamb", "chicken"};
+		String [] sounds = {"moo","oink","quack","neigh","baa", "cluck"};
+		for (int i=0;i<animals.length;i++) {
+			System.out.println("Old McDonalds had a farm. E-I-E-I-O.");
+			System.out.println("And on his farm he had "+ animals[i] + ". E-I-E-I-0.");
+			System.out.println("With a " + sounds[i] +" "+ sounds[i]+ " here " +"and a "+ sounds[i]+ " " + sounds[i]+  " there.");
+			System.out.println("Here a " + sounds[i] +". There a " +sounds[i]+".");
+			System.out.println("Everywhere a "+ sounds[i]+ " " + sounds[i]+".");
+		}
+
+	}
+
+}
